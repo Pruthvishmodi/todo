@@ -17,6 +17,12 @@
   "rules": {
     "arrow-parens": 0,
     "react/jsx-closing-bracket-location": 0,
-    "react/state-in-constructor": 0
+    "react/state-in-constructor": 0,
+    "comma-dangle": 0,
+    "implicit-arrow-linebreak": 0,
+    "array-bracket-newline": 0,
+    "react/jsx-curly-newLine":0,
+    "operator-linebreak":0
+
   }
 }

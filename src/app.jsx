@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Formik } from 'formik';
 import cn from 'classnames';
+import TodoFilter from './todoFilter';
+import TodoForm from './todoForm.jsx';
+import TodoList from './todoList';
 
-class Todo extends Component {
+class Todo extends PureComponent {
   state = {
     todoList: [],
     filterType: 'all',
@@ -70,6 +73,10 @@ class Todo extends Component {
     return (
       <div className="flex flex-col items-center bg-slate-200 h-screen">
         <h1 className="text-red-700">Todo Application</h1>
+        <TodoForm />
+        <todoList />
+        <TodoFilter />
+
         <Formik
           initialValues={{
             todoText: '',
